@@ -94,7 +94,7 @@ if ($type == 'join' || $command == '/menu') {
 
 if($message['type']=='text')
 {
-	if($pesan_datang=='1')
+	if($command=='1')
 	{
 		
 		
