@@ -94,7 +94,7 @@ if ($type == 'join' || $command == '/menu') {
 
 if($message['type']=='text')
 {
-	if($command=='2')
+	if($command=='ard')
 	{
 		$get_sub = array();
 		$aa =   array(
