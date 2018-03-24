@@ -130,6 +130,21 @@ if($message['type']=='text')
         );
     }
 }
+if($message['type']=='text') {
+	    if ($command == 'c') {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'image',
+						'originalContentUrl' => 'https://medantechno.com/line/images/bolt/1000.jpg',
+						'previewImageUrl' => 'https://medantechno.com/line/images/bolt/240.jpg'
+                )
+            )
+        );
+    }
+}
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == '/cuaca') {
