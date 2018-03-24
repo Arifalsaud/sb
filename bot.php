@@ -92,7 +92,31 @@ if ($type == 'join' || $command == '/menu') {
     );
 }
 
-	
+if($message['type']=='text')
+{
+	if($command=='2')
+	{
+		$get_sub = array();
+		$aa =   array(
+						'type' => 'image',									
+						'originalContentUrl' => 'https://medantechno.com/line/images/bolt/1000.jpg',
+						'previewImageUrl' => 'https://medantechno.com/line/images/bolt/240.jpg'	
+						
+					);
+		array_push($get_sub,$aa);	
+
+		$get_sub[] = array(
+									'type' => 'text',									
+									'text' => 'Halo '.$profil->displayName.', Anda memilih menu 2, harusnya gambar muncul.'
+								);
+		
+		$balas = array(
+					'replyToken' 	=> $replyToken,														
+					'messages' 		=> $get_sub
+				 );	
+	}
+}
+
 //pesan bergambar
 if($message['type']=='text')
 {
